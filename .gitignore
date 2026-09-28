@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+# pipeline state lives on the `data` branch, not on main
+data/
+models/
+.streamlit/secrets.toml

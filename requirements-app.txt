@@ -1,0 +1,6 @@
+# The dashboard only reads the database; it never loads the models.
+pandas>=2.2
+requests>=2.31
+streamlit>=1.40
+plotly>=5.20
+holidays>=0.50
