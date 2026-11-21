@@ -1,0 +1,49 @@
+{
+  "target": "pv",
+  "features": [
+    "zone_id",
+    "hour",
+    "dow",
+    "doy_sin",
+    "doy_cos",
+    "temperature_2m",
+    "apparent_temperature",
+    "relative_humidity_2m",
+    "wind_speed_10m",
+    "shortwave_radiation",
+    "cloud_cover",
+    "pv_lag48",
+    "pv_lag168",
+    "pv_cap",
+    "clear_ratio"
+  ],
+  "n_rows": 222360,
+  "train_start": "2024-10-05 05:00:00",
+  "train_end": "2026-11-16 12:00:00",
+  "holdout": {
+    "lgbm": {
+      "mae": 47.19810663733104,
+      "rmse": 124.00444274267367,
+      "wape": 0.2142543736797379,
+      "n": 8040
+    },
+    "xgb": {
+      "mae": 47.34113236712222,
+      "rmse": 124.05119424056173,
+      "wape": 0.21490363464251264,
+      "n": 8040
+    },
+    "ensemble": {
+      "mae": 46.66134874089598,
+      "rmse": 122.81306524721214,
+      "wape": 0.2118177774873943,
+      "n": 8040
+    },
+    "naive": {
+      "mae": 114.4015236318408,
+      "rmse": 294.4788414333496,
+      "wape": 0.5193222470149035,
+      "n": 8040
+    }
+  }
+}
